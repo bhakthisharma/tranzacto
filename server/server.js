@@ -7,9 +7,9 @@ app.use(cors())
 
 const { bgCyan } = require("colors");
 require("colors");
-// const connectDb = require("./config/config");
+const connectDb = require("./config/config");
 dotenv.config();
-// connectDb();
+connectDb();
 const app = express();
 
 app.use(cors());

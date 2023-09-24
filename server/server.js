@@ -3,7 +3,7 @@ const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const dotenv = require('dotenv')
-app.use(cors())
+
 
 const { bgCyan } = require("colors");
 require("colors");
@@ -18,13 +18,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
-app.get("/",(res, req)=>{
-res.send("<h1>POS BACKEND</h1>");
+app.get("/",(req, res)=>{
+res.send("<h1>DUDUBUBU</h1>");
 });
 
-// app.use("/api/items", require("./routes/itemRoutes"));
-
+app.use("/api/items", require("./routes/itemRoutes"));
+app.use(cors())
 const PORT = process.env.PORT || 2129;
+
 
 app.listen(PORT, () => {
   console.log(`Server Running On Port ${PORT}`.bgCyan.white);

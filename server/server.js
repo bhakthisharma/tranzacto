@@ -22,9 +22,10 @@ app.use(morgan("dev"));
 
 //routes
 app.use("/api/items", require("./routes/itemRoutes"));
+app.use("/api/users", require("./routes/userRoutes"));
 
 //port
-const PORT = process.env.PORT || 2129;
+const PORT = process.env.PORT || 8080;
 
 //listen
 app.listen(PORT, () => {

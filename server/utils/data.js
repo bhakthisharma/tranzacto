@@ -13,7 +13,7 @@ const items = [
     image: "https://i.cdn.newsbytesapp.com/images/l110_14211532861690.jpg",
   },
   {
-    name: "Chicken Biryani",
+    name: "Palav",
     price: 10,
     category: "rice",
     image:
@@ -27,13 +27,13 @@ const items = [
       "https://www.indianveggiedelight.com/wp-content/uploads/2020/04/veg-biryani-instant-pot-featured.jpg",
   },
   {
-    name: "Chicken Hakka",
+    name: "Masal Dosa",
     price: 7,
     category: "noodles",
     image: "https://cravecookclick.com/wp-content/uploads/2012/07/IMG_4400.jpg",
   },
   {
-    name: "Eggy",
+    name: "Pani Poori",
     price: 5,
     category: "noodles",
     image:
